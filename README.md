@@ -1,0 +1,2 @@
+XBMC-Partymode-Autostart
+========================

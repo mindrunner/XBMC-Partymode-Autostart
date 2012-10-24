@@ -2,7 +2,7 @@
 <settings>		
 	<category label="Main">
 		<setting id="enable" type="bool" label="30000" default="true"/>
-		<setting id="fullscreen" type="bool" label="30001" default="true"/>
+		<setting id="fullscreen" type="bool" label="30001" default="false"/>
 		<setting id="delay" type="number" label="30002" default="0"/>
 		<setting id="fullscreendelay" type="number" label="30003" default="20"/>
 	</category>

@@ -24,4 +24,3 @@ if __name__ == '__main__':
         if fullscreen:
             time.sleep(int(fullscreendelay))
             xbmc.executebuiltin("XBMC.ActivateWindow(visualisation)")
-

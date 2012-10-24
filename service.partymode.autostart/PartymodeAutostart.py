@@ -9,14 +9,19 @@ v0.0.2
 import xbmc
 import xbmcgui
 import xbmcaddon
+import time
 
 if __name__ == '__main__':
     addon_id = "service.partymode.autostart"
     Addon = xbmcaddon.Addon(addon_id)
-    if Addon.getSetting('enable'):
-        sleep(Addon.getSetting('delay'))
+    enable = Addon.getSetting('enable')
+    delay = Addon.getSetting('delay')
+    fullscreen = Addon.getSetting('fullscreen')
+    fullscreendelay = Addon.getSetting('fullscreendelay')
+    if enable:
+        time.sleep(int(delay))
         xbmc.executebuiltin("XBMC.PlayerControl(PartyMode)")
-        if Addon.getSetting('fullscreen'):
-            sleep(Settings.getSetting('fullscreendelay'))
+        if fullscreen:
+            time.sleep(int(fullscreendelay))
             xbmc.executebuiltin("XBMC.ActivateWindow(visualisation)")
 

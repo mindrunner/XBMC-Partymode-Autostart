@@ -17,6 +17,6 @@ if __name__ == '__main__':
         sleep(Addon.getSetting('delay'))
         xbmc.executebuiltin("XBMC.PlayerControl(PartyMode)")
         if Addon.getSetting('fullscreen'):
-            sleep(20)
+            sleep(Settings.getSetting('fullscreendelay'))
             xbmc.executebuiltin("XBMC.ActivateWindow(visualisation)")
 

@@ -4,4 +4,5 @@
 	<string id="30000">Activate service</string>
 	<string id="30001">Activate fullscreen/virtualization</string>
 	<string id="30002">Startup delay</string>
+	<string id="30003">Fullscreen delay</string>
 </strings>

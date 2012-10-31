@@ -5,4 +5,6 @@
 	<string id="30001">Activate fullscreen/virtualization</string>
 	<string id="30002">Startup delay</string>
 	<string id="30003">Fullscreen delay</string>
+	<string id="30004">Autoatart on idle</string>
+	<string id="30005">Idletimer Interval</string>
 </strings>

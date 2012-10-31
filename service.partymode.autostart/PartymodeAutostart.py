@@ -18,9 +18,9 @@ if __name__ == '__main__':
     delay = Addon.getSetting('delay')
     fullscreen = Addon.getSetting('fullscreen')
     fullscreendelay = Addon.getSetting('fullscreendelay')
-    if enable:
+    if enable == "true":
         time.sleep(int(delay))
         xbmc.executebuiltin("XBMC.PlayerControl(PartyMode)")
-        if fullscreen:
+        if fullscreen == "true":
             time.sleep(int(fullscreendelay))
             xbmc.executebuiltin("XBMC.ActivateWindow(visualisation)")
